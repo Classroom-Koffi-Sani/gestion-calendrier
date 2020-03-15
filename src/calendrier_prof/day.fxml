@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox alignment="CENTER" prefHeight="326.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="313.0" prefWidth="344.0">
+         <children>
+            <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+               <children>
+                  <Label fx:id="dayTitle" layoutX="128.0" layoutY="14.0" prefHeight="21.0" prefWidth="89.0" style="-fx-background-color: #232561;" textFill="WHITE" />
+               </children>
+            </Pane>
+            <ScrollPane prefHeight="265.0" prefWidth="365.0" style="-fx-background-color: gray;">
+               <content>
+                  <VBox fx:id="manageCourse" prefHeight="209.0" prefWidth="340.0" spacing="120.0">
+                     <children>
+                        <Pane fx:id="course" prefHeight="120.0" prefWidth="341.0">
+                           <children>
+                              <Separator layoutX="-1.0" layoutY="113.0" prefHeight="15.0" prefWidth="337.0" />
+                              <Label fx:id="time" layoutX="14.0" layoutY="50.0" text="Label" />
+                              <Label fx:id="courseTitle" layoutX="137.0" layoutY="4.0" text="Label" />
+                              <Pane layoutX="137.0" layoutY="35.0" prefHeight="72.0" prefWidth="177.0" style="-fx-background-color: #717184;">
+                                 <children>
+                                    <ImageView layoutX="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/images/user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="profName" layoutX="71.0" layoutY="48.0" text="Label" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

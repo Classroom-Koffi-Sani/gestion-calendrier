@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox fx:id="centerBox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendrier_prof.ProgramController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="613.0" prefWidth="892.0" spacing="25.0" style="-fx-background-color: #4A4B7C;">
+         <children>
+            <HBox fx:id="top" prefHeight="396.0" prefWidth="997.0">
+               <children>
+                  <ScrollPane prefHeight="595.0" prefWidth="1002.0">
+                     <content>
+                        <HBox fx:id="week" spacing="20.0">
+                           <children>
+                              <VBox fx:id="day1" alignment="CENTER" prefHeight="306.0" prefWidth="392.0">
+                                 <children>
+                                    <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+                                       <children>
+                                          <Label fx:id="dayTitle1" layoutX="152.0" layoutY="5.0" onDragDropped="#handleProfDragDropped" onDragOver="#handleProfDragOver" style="-fx-background-color: #232561;" text="Lundi" textFill="WHITE">
+                                             <font>
+                                                <Font name="Consolas" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <ScrollPane prefHeight="265.0" prefWidth="397.0" style="-fx-background-color: gray;">
+                                       <content>
+                                          <VBox fx:id="coursesList1" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="day2" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="306.0" prefWidth="392.0">
+                                 <children>
+                                    <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+                                       <children>
+                                          <Label fx:id="dayTitle2" layoutX="152.0" layoutY="5.0" onDragDropped="#handleProfDragDropped" onDragOver="#handleProfDragOver" style="-fx-background-color: #232561;" text="Mardi" textFill="WHITE">
+                                             <font>
+                                                <Font name="Consolas" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <ScrollPane prefHeight="265.0" prefWidth="397.0" style="-fx-background-color: gray;">
+                                       <content>
+                                          <VBox fx:id="coursesList2" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="day3" alignment="CENTER" layoutX="422.0" layoutY="10.0" prefHeight="306.0" prefWidth="392.0">
+                                 <children>
+                                    <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+                                       <children>
+                                          <Label fx:id="dayTitle3" layoutX="152.0" layoutY="5.0" onDragDropped="#handleProfDragDropped" onDragOver="#handleProfDragOver" style="-fx-background-color: #232561;" text="Mercredi" textFill="WHITE">
+                                             <font>
+                                                <Font name="Consolas" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <ScrollPane prefHeight="265.0" prefWidth="397.0" style="-fx-background-color: gray;">
+                                       <content>
+                                          <VBox fx:id="coursesList3" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="day4" alignment="CENTER" layoutX="834.0" layoutY="10.0" prefHeight="306.0" prefWidth="392.0">
+                                 <children>
+                                    <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+                                       <children>
+                                          <Label fx:id="dayTitle4" layoutX="152.0" layoutY="5.0" onDragDropped="#handleProfDragDropped" onDragOver="#handleProfDragOver" style="-fx-background-color: #232561;" text="Jeudi" textFill="WHITE">
+                                             <font>
+                                                <Font name="Consolas" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <ScrollPane prefHeight="265.0" prefWidth="397.0" style="-fx-background-color: gray;">
+                                       <content>
+                                          <VBox fx:id="coursesList4" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="day5" alignment="CENTER" layoutX="1246.0" layoutY="10.0" prefHeight="306.0" prefWidth="392.0">
+                                 <children>
+                                    <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+                                       <children>
+                                          <Label fx:id="dayTitle5" layoutX="152.0" layoutY="5.0" onDragDropped="#handleProfDragDropped" onDragOver="#handleProfDragOver" style="-fx-background-color: #232561;" text="Vendredi" textFill="WHITE">
+                                             <font>
+                                                <Font name="Consolas" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <ScrollPane prefHeight="265.0" prefWidth="397.0" style="-fx-background-color: gray;">
+                                       <content>
+                                          <VBox fx:id="coursesList5" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="day6" alignment="CENTER" layoutX="1658.0" layoutY="10.0" prefHeight="306.0" prefWidth="392.0">
+                                 <children>
+                                    <Pane prefHeight="49.0" prefWidth="243.0" style="-fx-background-color: #717184;">
+                                       <children>
+                                          <Label fx:id="dayTitle6" layoutX="152.0" layoutY="5.0" onDragDropped="#handleProfDragDropped" onDragOver="#handleProfDragOver" style="-fx-background-color: #232561;" text="Samedi" textFill="WHITE">
+                                             <font>
+                                                <Font name="Consolas" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <ScrollPane prefHeight="265.0" prefWidth="397.0" style="-fx-background-color: gray;">
+                                       <content>
+                                          <VBox fx:id="coursesList6" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox fx:id="bottom" prefHeight="123.0" prefWidth="1002.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <ScrollPane prefHeight="86.0" prefWidth="1002.0">
+                     <content>
+                        <HBox fx:id="profPicker">
+                           <children>
+                              <Pane>
+                                 <children>
+                                    <ImageView fx:id="addProf" layoutX="-2.0" layoutY="-1.0" onDragDetected="#handleProfDragDetected" onDragDone="#handleProfDragDone" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/images/profPicker.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="d_profName" layoutX="21.0" layoutY="76.0" text="toto" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="613.0" prefWidth="135.0" spacing="12.0" style="-fx-background-color: #232561;" stylesheets="@style/button.css">
+         <children>
+            <Pane prefHeight="130.0" prefWidth="135.0">
+               <children>
+                  <JFXButton fx:id="form1" contentDisplay="GRAPHIC_ONLY" layoutX="33.0" layoutY="34.0" onMouseClicked="#loadForm1Content">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/images/form1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Separator prefWidth="200.0" />
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="130.0" prefWidth="135.0">
+               <children>
+                  <JFXButton fx:id="form2" contentDisplay="GRAPHIC_ONLY" layoutX="33.0" layoutY="34.0" onMouseClicked="#loadForm2Content">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/images/form2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Separator prefWidth="200.0" />
+            <Pane layoutX="10.0" layoutY="170.0" prefHeight="130.0" prefWidth="135.0">
+               <children>
+                  <JFXButton fx:id="form3" contentDisplay="GRAPHIC_ONLY" layoutX="33.0" layoutY="35.0" onMouseClicked="#loadForm3Content">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/images/form3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Separator prefWidth="200.0" />
+            <Pane layoutX="10.0" layoutY="330.0" prefHeight="130.0" prefWidth="135.0">
+               <children>
+                  <JFXButton fx:id="form4" contentDisplay="GRAPHIC_ONLY" layoutX="33.0" layoutY="35.0" onMouseClicked="#loadForm4Content">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/images/form4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
