@@ -19,7 +19,7 @@ public class Calendrier_prof extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("profs.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         
         Scene scene = new Scene(root);
         
