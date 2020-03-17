@@ -19,12 +19,18 @@ import java.util.ArrayList;
  */
 public class Database {
     
+    private static String port = "3306";
+    private static String dbname = "calendrier";
+    private static String username = "root";
+    private static String password = "admin";
+
     private static Database database;
     private final Connection connection;
     
     private Database() throws ClassNotFoundException, SQLException{
+        
         Class.forName("com.mysql.jdbc.Driver"); 
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/calendrier","root","admin");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:" + port +"/" + dbname, username, password);
         
     }
     
