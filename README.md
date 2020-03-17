@@ -11,9 +11,9 @@ this project can be open with any kind of JAVA IDE  but we advice to use NETBEAN
 
 
 ## Contributors
-* ASSEKOUDA Samtou  - [AssekoudaSamtou](https://github.com/AssekoudaSamtou)
-* SAKIYE Prosper  - [iamprosper](https://github.com/iamprosper)
-* ADJANFELE Justine  - [wisdomtohe](https://github.com/wisdomtohe)
+* ASSEKOUDA Samtou  - [@AssekoudaSamtou](https://github.com/AssekoudaSamtou)
+* SAKIYE Prosper  - [@iamprosper](https://github.com/iamprosper)
+* ADJANFELE Justine  - [@eloragodson](https://github.com/eloragodson)
 
 ## Supervisor
-this work was supervised by Koffi Sani -[koffisani](https://github.com/koffisani)
+this work was supervised by Koffi Sani -[@koffisani](https://github.com/koffisani)
